@@ -1,0 +1,175 @@
+
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #173b70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #222;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav li a:hover {
+    background-color: #456fa8;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #173b70;
+}
+
+/* EVENTS */
+
+article {
+    background-color: #edf3fb;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #173b70;
+}
+
+aside {
+    background-color: #fff3cd;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* FORM */
+
+form {
+    max-width: 700px;
+}
+
+fieldset {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #173b70;
+}
+
+label {
+    display: inline-block;
+    margin: 8px 5px 8px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+button {
+    background-color: #173b70;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #315d96;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #e69500;
+    outline-offset: 3px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #173b70;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

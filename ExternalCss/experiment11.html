@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Lab Experiment 1</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to HTML Lab</h1>
+        <p>Learning Semantic and Accessible HTML</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home</h2>
+            <p>
+                HTML stands for HyperText Markup Language.
+                It is used to create webpages.
+            </p>
+
+            <img src="https://via.placeholder.com/300"
+                 alt="Sample placeholder image"
+                 width="300">
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About HTML</h2>
+            <p>
+                HTML provides the structure of a webpage.
+                It works with CSS and JavaScript.
+            </p>
+
+            <h3>HTML Features</h3>
+
+            <ul>
+                <li>Easy to learn</li>
+                <li>Platform independent</li>
+                <li>Supports multimedia</li>
+                <li>Creates webpage structure</li>
+            </ul>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2>Available Courses</h2>
+
+            <table border="1">
+                <caption>HTML Lab Course Details</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">S.No</th>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Duration</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>2 Weeks</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>CSS</td>
+                        <td>3 Weeks</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>JavaScript</td>
+                        <td>4 Weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <br><br>
+
+                <label for="course">Select Course:</label>
+
+                <select id="course" name="course">
+                    <option value="">Select Course</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+        <!-- External Link -->
+        <section>
+            <h2>Learn More</h2>
+
+            <p>
+                Visit
+                <a href="https://www.w3schools.com/html/">
+                    W3Schools HTML Tutorial
+                </a>
+                to learn HTML.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 HTML Lab. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
